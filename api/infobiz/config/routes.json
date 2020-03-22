@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/infobizs",
+      "handler": "infobiz.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infobizs/count",
+      "handler": "infobiz.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infobizs/:id",
+      "handler": "infobiz.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/infobizs",
+      "handler": "infobiz.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/infobizs/:id",
+      "handler": "infobiz.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/infobizs/:id",
+      "handler": "infobiz.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

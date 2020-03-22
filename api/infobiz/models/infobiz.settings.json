@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "infobizs",
+  "info": {
+    "name": "Infobiz"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "infobiz_type": {
+      "model": "infobiz-type"
+    },
+    "business": {
+      "model": "business"
+    }
+  }
+}

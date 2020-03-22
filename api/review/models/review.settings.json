@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "reviews",
+  "info": {
+    "name": "Review"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "review": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Approved": {
+      "type": "boolean"
+    },
+    "business": {
+      "model": "business"
+    },
+    "bizlabel": {
+      "type": "string"
+    }
+  }
+}

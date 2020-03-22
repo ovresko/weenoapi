@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/message-groups",
+      "handler": "message-group.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/message-groups/count",
+      "handler": "message-group.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/message-groups/:id",
+      "handler": "message-group.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/message-groups",
+      "handler": "message-group.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/message-groups/:id",
+      "handler": "message-group.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/message-groups/:id",
+      "handler": "message-group.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

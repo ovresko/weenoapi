@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "components_calendar_openeds",
+  "info": {
+    "name": "opened",
+    "icon": "key"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Samedi",
+        "Dimanche",
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi"
+      ]
+    },
+    "open": {
+      "type": "time"
+    },
+    "close": {
+      "type": "time"
+    }
+  }
+}

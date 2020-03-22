@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "businesses",
+  "info": {
+    "name": "Business"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "Claimed": {
+      "type": "boolean"
+    },
+    "website": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "category": {
+      "model": "category"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone2": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "opened": {
+      "type": "component",
+      "repeatable": true,
+      "component": "calendar.opened"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "message_groups",
+  "info": {
+    "name": "Message Group"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user1": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "user2": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "last": {
+      "type": "string"
+    },
+    "isend": {
+      "type": "integer"
+    }
+  }
+}

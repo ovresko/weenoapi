@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/infobiz-types",
+      "handler": "infobiz-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infobiz-types/count",
+      "handler": "infobiz-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infobiz-types/:id",
+      "handler": "infobiz-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/infobiz-types",
+      "handler": "infobiz-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/infobiz-types/:id",
+      "handler": "infobiz-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/infobiz-types/:id",
+      "handler": "infobiz-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
